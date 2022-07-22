@@ -15,7 +15,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "npm run build:types && rollup --config",
+    "build:types": "tsc"
   },
   "repository": {
     "type": "git",
